@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 AS build
+FROM ac2-registry.cn-hangzhou.cr.aliyuncs.com/ac2/base:ubuntu22.04 AS build
 ARG MODEL
 #shell,rtmp,rtsp,rtsps,http,https,rtp
 EXPOSE 1935/tcp

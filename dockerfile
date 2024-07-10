@@ -55,7 +55,7 @@ WORKDIR /opt/media/ZLMediaKit/build
 RUN cmake -DCMAKE_BUILD_TYPE=${MODEL} -DENABLE_WEBRTC=true -DENABLE_FFMPEG=true -DENABLE_TESTS=false -DENABLE_API=false .. && \
     make -j $(nproc)
 
-FROM ubuntu:20.04
+FROM ac2-registry.cn-hangzhou.cr.aliyuncs.com/ac2/base:ubuntu22.04
 ARG MODEL
 
 # ADD sources.list /etc/apt/sources.list
